@@ -36,7 +36,7 @@ function findIdByLabel(label) {
   return station ? station.id : null;
 }
 
-app.get("/run-script", async (req, res) => {
+app.get("/", async (req, res) => {
   const { src, dest } = req.query;
 
   // Validate src and dest
